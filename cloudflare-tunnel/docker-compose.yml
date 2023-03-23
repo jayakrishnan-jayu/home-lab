@@ -1,0 +1,7 @@
+version: '3'
+services:
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    command: tunnel --no-autoupdate run --token ${CF_API_TOKEN}
+    environment:
+      CF_API_TOKEN: ${CF_API_TOKEN}
