@@ -1,2 +1,4 @@
 portainer/portainer-data
 *.env
+jellyfin/cache/*
+jellyfin/config/*
